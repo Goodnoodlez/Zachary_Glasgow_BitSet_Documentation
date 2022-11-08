@@ -8,3 +8,21 @@ Bitset should be used whenever memory could be an issue for whatever machine the
 
 ## Implementation of BitSet
 BitSet is part of the standard library in C++ which means that you dont need to include any external library to use it. To use Bitset you first must know how big of a set you want to use since it is intialized at the start of running your program. For example to refer back to the survey example that was given previously on intializatoion of the BitSet you haved to know the number of querys given in the survey which would be twenty in the current use. BitSet will not work if you were to try and change the number of querys as the program was running. This is the major drawback of BitSet but as long as you know the number of of querys then the problem is moot.
+
+## How to use BitSet
+These are the common functions you might use while using BitSet.
+
+bitset<8> set8; This implments a bitset named set8 that has 8 querys that can be used its intial value being 00000000
+
+set8.set(0); This changes the value of the bit in the zero position to 1 changing the set to 00000001
+
+set8.rest(0); This changes the value of the bit in the zero position to 0 changing the set to 00000000
+
+set8.flip(); This changes the value of the whole set to the oposite value changing the set to 11111111
+
+set8.size(); This reports the size of the bitset which would currently be 8
+
+set8.to_string(); This converts the value of the bitset to a string which would read out currently "11111111"
+
+## Conclusion
+BitSet is very useful way to store any data that can have a true or false value Since it has a small size and does the same job as its competitors.
